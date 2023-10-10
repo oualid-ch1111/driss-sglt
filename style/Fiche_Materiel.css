@@ -1,0 +1,100 @@
+/* Style généraux */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    margin-top: 15px;
+}
+
+nav.navbar {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Aligner les liens aux extrémités de la barre de navigation */
+}
+
+nav.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white; /* Rendre la couleur du texte blanche */
+}
+
+/* Styles pour le formulaire */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Vous pouvez ajuster la largeur du formulaire */
+    margin-top: 20px;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field input, .form-field textarea, .form-field select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-wrapper {
+    margin-top: 15px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between; /* ou space-evenly pour un espacement égal */
+}
+
+.button-wrapper .button {
+    flex: 1; /* Faire en sorte que les boutons occupent la même largeur */
+    margin-right: 10px; /* Ajouter un peu d'espace entre les boutons */
+}
+
+.button-wrapper .button:last-child {
+    margin-right: 0; /* Supprimer la marge du dernier bouton */
+}
+
+.button-wrapper input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+.button-wrapper input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 6px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Styles pour les éléments d'en-tête */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Ajouter d'autres styles personnalisés au besoin */

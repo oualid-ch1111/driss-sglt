@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taux Page</title>
+</head>
+<body>
+<div>
+        <h1>Taux Page</h1>
+        <nav class="navbar">
+            <a href="/" class="navbar-link">SGLT</a>
+            <a href="/" class="navbar-link">Home</a>
+            <a href="/about" class="navbar-link">About</a>
+        </nav>
+        <div class="content-section">
+            <div class="button-container">
+                <a href="Fiche_Materiel.html" class="content-button">Fiche matériel</a>
+                <a href="indices.html" class="content-button">Indices</a>
+                <a href="fournisseur.html" class="content-button">Fournisseur</a>
+                <a href="fiche-de-vie.html" class="content-button">Fiche de Vie</a>
+                <a href="plans-de-mp.html" class="content-button">Plans de MP</a>
+                <a href="compteur.html" class="content-button">Compteur</a>
+                <a href="attribution.html" class="content-button">Attribution</a>
+                <a href="agent.html" class="content-button">Agent</a>
+                <a href="taux.html" class="content-button">Taux</a>
+                <a href="counter.html" class="content-button">Counter</a>
+                <a href="demande-intervention.html "class="content-button">Demande d'intervention</a>
+                <a href="ordre-de-travail.html "class="content-button">Ordre de travail</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <form class="form-container" action="save_taux_data.php" method="post">
+            
+            <div class="form-field">
+                <label for="entite">Entité:</label>
+                <input type="text" id="entite" name="entite" />
+            </div>
+
+            <div class="form-field">
+                <label for="Agent">agent:</label>
+                <input type="text" id="agent" name="agent" />
+            </div>
+
+            <div class="form-field">
+                <label for="type_heures">Type d'heures:</label>
+                <input type="text" id="type_heures" name="type_heures" />
+            </div>
+
+            <div class="form-field">
+               <label for="service_maintenance">Service Maintenance:</label>
+               <select id="service_maintenance" name="service_maintenance" required>
+                   <option value="service_maintenance_fixe">Service maintenance fixe</option>
+                   <option value="service_maintenance_mobile">Service maintenance mobile</option>
+                   <option value="service_maintenance_externe_fixe">Service maintenance externe fixe</option>
+                   <option value="service_maintenance_externe_mobile">Service maintenance externe mobile</option>
+               </select>
+            </div>
+
+            <div class="form-field">
+                <label for="taux_horaire">Taux horaire:</label>
+                <input type="number" step="0.01" id="taux_horaire" name="taux_horaire" />
+            </div>
+
+            <div class="form-field">
+                <label for="date_debut">Date de début:</label>
+                <input type="date" id="date_debut" name="date_debut" />
+            </div>
+
+            <div class="form-field">
+                <label for="date_fin">Date de fin:</label>
+                <input type="date" id="date_fin" name="date_fin" />
+            </div>
+
+            <button type="submit">Enregistrer</button>
+        </form>
+    </div>
+</body>
+</html>

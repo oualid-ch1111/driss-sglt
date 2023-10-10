@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Page</title>
+    <!-- Include your CSS here if you have one -->
+    <!--link rel="stylesheet" href="path_to_your_stylesheet.css"-->
+</head>
+<body>
+<div>
+        <h1>Counter</h1>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-link">SGLT</a>
+            <a href="index.html" class="navbar-link">Home</a>
+            <a href="index.html" class="navbar-link">About</a>
+        </nav>
+        <div class="content-section">
+            <div class="button-container">
+                <a href="Fiche_Materiel.php" class="content-button">Fiche matériel</a>
+                <a href="indices.html" class="content-button">Indices</a>
+                <a href="fournisseur.html" class="content-button">Fournisseur</a>
+                <a href="fiche-de-vie.html" class="content-button">Fiche de Vie</a>
+                <a href="plans-de-mp.html" class="content-button">Plans de MP</a>
+                <a href="compteur.html" class="content-button">Compteur</a>
+                <a href="attribution.html" class="content-button">Attribution</a>
+                <a href="agent.html" class="content-button">Agent</a>
+                <a href="taux.html" class="content-button">Taux</a>
+                <a href="counter.html" class="content-button">Counter</a>
+                <a href="demande-intervention.html "class="content-button">Demande d'intervention</a>
+                <a href="ordre-de-travail.html "class="content-button">Ordre de travail</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+        <form class="form-container" action="save/save_counter_data.php" method="post">
+            
+            <div class="form-field">
+                <label for="compteur">Compteur:</label>
+                <input type="text" id="compteur" name="compteur" />
+            </div>
+
+            <div class="form-field">
+                <label for="materiel">Matériel:</label>
+                <input type="text" id="materiel" name="materiel" />
+            </div>
+
+            <div class="form-field">
+                <label for="entite">Entité:</label>
+                <input type="text" id="entite" name="entite" />
+            </div>
+
+            <div class="form-field">
+                <label for="unite_compteur">Unité de compteur:</label>
+                <input type="text" id="unite_compteur" name="unite_compteur" />
+            </div>
+
+            <button type="submit">Enregistrer</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans De MP Page</title>
+    <!-- Include your CSS here if you have one -->
+    <!--link rel="stylesheet" href="path_to_your_stylesheet.css"-->
+</head>
+<body>
+<div>
+        <h1>Plans De MP</h1>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-link">SGLT</a>
+            <a href="index.html" class="navbar-link">Home</a>
+            <a href="index.html" class="navbar-link">About</a>
+        </nav>
+        <div class="content-section">
+            <div class="button-container">
+                <a href="Fiche_Materiel.html" class="content-button">Fiche matériel</a>
+                <a href="indices.html" class="content-button">Indices</a>
+                <a href="fournisseur.html" class="content-button">Fournisseur</a>
+                <a href="fiche-de-vie.html" class="content-button">Fiche de Vie</a>
+                <a href="plans-de-mp.html" class="content-button">Plans de MP</a>
+                <a href="compteur.html" class="content-button">Compteur</a>
+                <a href="attribution.html" class="content-button">Attribution</a>
+                <a href="agent.html" class="content-button">Agent</a>
+                <a href="taux.html" class="content-button">Taux</a>
+                <a href="counter.html" class="content-button">Counter</a>
+                <a href="demande-intervention.html "class="content-button">Demande d'intervention</a>
+                <a href="ordre-de-travail.html "class="content-button">Ordre de travail</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+            <form action="save/save_plans_de_mp_data.php" method="post" class="form-container"> 
+
+            <div class="form-field">
+                <label for="mp">MP:</label>
+                <input type="text" id="mp" name="mp" />
+            </div>
+
+            <div class="form-field">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description"></textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="entite_mp">Entité MP:</label>
+                <input type="text" id="entite_mp" name="entite_mp" />
+            </div>
+
+            <div class="form-field">
+               <label for="service_maintenance">Service Maintenance:</label>
+               <select id="service_maintenance" name="service_maintenance" required>
+                       <option value="service_maintenance_fixe">Service maintenance fixe</option>
+                       <option value="service_maintenance_mobile">Service maintenance mobile</option>
+                       <option value="service_maintenance_externe_fixe">Service maintenance externe fixe</option>
+                       <option value="service_maintenance_externe_mobile">Service maintenance externe mobile</option>
+                </select>
+            </div>
+
+                
+               
+            
+
+            <div class="form-field">
+                <label for="effectue_a">Effectué à:</label>
+                <input type="text" id="effectue_a" name="effectue_a" />
+            </div>
+
+            <div class="form-field">
+                <label for="date_echeance">Date d'échéance:</label>
+                <input type="date" id="date_echeance" name="date_echeance" />
+            </div>
+
+            <div class="form-field">
+                <label for="unite_mesure">Unité de mesure période:</label>
+                <input type="text" id="unite_mesure" name="unite_mesure" />
+            </div>
+
+            <div class="form-field">
+                <label for="code_imputation">Code d'imputation:</label>
+                <input type="number" id="code_imputation" name="code_imputation" />
+            </div>
+
+            <div class="form-field">
+                <label for="ordre_travail">Ordre de travail:</label>
+                <input type="text" id="ordre_travail" name="ordre_travail" />
+            </div>
+
+            <div class="form-field">
+                <label for="type_mp">Type de MP:</label>
+                <input type="text" id="type_mp" name="type_mp" />
+            </div>
+
+            <div class="form-field">
+                <label for="intervalle_controle">Intervalle de controle:</label>
+                <input type="text" id="intervalle_controle" name="intervalle_controle" />
+            </div>
+
+            <div class="form-field">
+                <label for="udm_compteur">UDM de compteur:</label>
+                <input type="text" id="udm_compteur" name="udm_compteur" />
+            </div>
+
+            <div class="form-field">
+                <label for="effectue_le">Effectué le:</label>
+                <input type="date" id="effectue_le" name="effectue_le" />
+            </div>
+
+            <div class="form-field">
+                <label for="materiel">Matériel:</label>
+                <input type="text" id="materiel" name="materiel" />
+            </div>
+
+            <button type="submit">Enregistrer</button>
+        </form>
+    </div>
+</body>
+</html>

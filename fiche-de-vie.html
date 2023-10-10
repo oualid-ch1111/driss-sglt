@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche De Vie Page</title>
+    <!-- Include your CSS here if you have one -->
+    <!--link rel="stylesheet" href="path_to_your_stylesheet.css"-->
+</head>
+<body>
+<div>
+        <h1>Fiche De Vie</h1>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-link">SGLT</a>
+            <a href="index.html" class="navbar-link">Home</a>
+            <a href="index.html" class="navbar-link">About</a>
+        </nav>
+        <div class="content-section">
+            <div class="button-container">
+                <a href="Fiche_Materiel.php" class="content-button">Fiche matériel</a>
+                <a href="indices.html" class="content-button">Indices</a>
+                <a href="fournisseur.html" class="content-button">Fournisseur</a>
+                <a href="fiche-de-vie.html" class="content-button">Fiche de Vie</a>
+                <a href="plans-de-mp.html" class="content-button">Plans de MP</a>
+                <a href="compteur.html" class="content-button">Compteur</a>
+                <a href="attribution.html" class="content-button">Attribution</a>
+                <a href="agent.html" class="content-button">Agent</a>
+                <a href="taux.html" class="content-button">Taux</a>
+                <a href="counter.html" class="content-button">Counter</a>
+                <a href="demande-intervention.html "class="content-button">Demande d'intervention</a>
+                <a href="ordre-de-travail.html "class="content-button">Ordre de travail</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+        <form action="save/save_fiche_de_vie_data.php" method="post" class="form-container">
+
+            <div class="form-field">
+                <label class="label" for="description_evenement">Description évènement:</label>
+                <textarea class="textarea-field" id="description_evenement" name="description_evenement"></textarea>
+            </div>
+
+            <div class="form-field">
+               <label class="label" for="statut">Statut:</label>
+                   <select class="input-field" id="statut" name="statut" required>
+                   <option value="          ">         </option>
+                   <option value="en_service">En Service</option>
+                   <option value="en_fin_de_vie">En fin de vie</option>
+                   <option value="sortie">Sortie</option>
+                </select>
+            </div> 
+            <div class="form-field">
+                <label class="label" for="evenement_numero">Evenement numéro:</label>
+                <input class="input-field" type="number" id="evenement_numero" name="evenement_numero" />
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="date_achevement">Date d'achèvement:</label>
+                <input class="input-field" type="date" id="date_achevement" name="date_achevement" />
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="description_probleme">Description du problème:</label>
+                <textarea class="textarea-field" id="description_probleme" name="description_probleme"></textarea>
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="heures_arret">Heures d'arrêt:</label>
+                <input class="input-field" type="number" step="0.01" id="heures_arret" name="heures_arret" />
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="code_panne">Code de panne:</label>
+                <textarea class="textarea-field" id="code_panne" name="code_panne"></textarea>
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="entite">Entité:</label>
+                <input class="input-field" type="text" id="entite" name="entite" />
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="materiel">Matériel:</label>
+                <input class="input-field" type="text" id="materiel" name="materiel" />
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="affecte_a">Affecté à:</label>
+                <input class="input-field" type="text" id="affecte_a" name="affecte_a" />
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="releve">Relevé:</label>
+                <input class="input-field" type="text" id="releve" name="releve" />
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="document_ot">Document OT:</label>
+                <input class="input-field" type="text" id="document_ot" name="document_ot" />
+            </div>
+
+            <button class="button" type="submit">Enregistrer</button>
+        </form>
+    </div>
+</body>
+</html>
